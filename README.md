@@ -1,33 +1,34 @@
-![LLM Replay Proxy cover](assets/readme-cover.svg)
-
 # LLM Replay Proxy
 
 Record and replay OpenAI-compatible API calls for deterministic local tests.
 
-## Working shape
+![LLM Replay Proxy cover](assets/readme-cover.svg)
 
-The repo is meant to be opened, understood, and run quickly. The command surface is deliberately narrow: `llm-replay`.
+## Where things live
 
-## Fresh clone
+```text
+.github/        CI workflow
+examples/       sample inputs
+src/            package source
+tests/          test coverage
+.gitignore      project file
+```
+
+## Shape of the tool
+
+![Workflow diagram](assets/readme-diagram.svg)
+
+## Start here
 
 ```bash
 git clone https://github.com/mertefekurt/llm-replay-proxy.git
 cd llm-replay-proxy
-python -m venv .venv
-source .venv/bin/activate
 python -m pip install -e ".[dev]"
-```
-
-## First command
-
-```bash
 llm-replay examples/request.json
 ```
 
-## Local confidence
+## Why this shape
 
-```bash
-ruff check .
-pytest
-python -m llm_replay_proxy --help
-```
+- Designed as a focused model evaluation repo.
+- Keeps setup short.
+- Prioritizes readable output over infrastructure.
