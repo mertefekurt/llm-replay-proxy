@@ -1,37 +1,32 @@
-# LLM Replay Proxy
-
 ![LLM Replay Proxy cover](assets/readme-cover.svg)
 
-![stack](https://img.shields.io/badge/stack-Python-16a34a?style=flat-square) ![python](https://img.shields.io/badge/python-3.11-dc2626?style=flat-square) ![license](https://img.shields.io/badge/license-MIT-7c3aed?style=flat-square) ![ci](https://img.shields.io/badge/ci-GitHub%20Actions-0891b2?style=flat-square)
+# LLM Replay Proxy
 
-> Record and replay OpenAI-compatible API calls for deterministic local tests
+Record and replay OpenAI-compatible API calls for deterministic local tests.
 
-## How I use it
+## Working shape
 
-The project stays focused on one job: take a small input, produce a clear result, and avoid adding a heavy service around a problem that fits in a command line.
+The repo is meant to be opened, understood, and run quickly. The command surface is deliberately narrow: `llm-replay`.
 
-## Quick start
+## Fresh clone
 
 ```bash
+git clone https://github.com/mertefekurt/llm-replay-proxy.git
+cd llm-replay-proxy
+python -m venv .venv
+source .venv/bin/activate
 python -m pip install -e ".[dev]"
+```
+
+## First command
+
+```bash
 llm-replay examples/request.json
 ```
 
-## What is inside
-
-```text
-.github/        CI workflow
-examples/       sample inputs
-src/            package source
-tests/          test coverage
-.gitignore      project file
-pyproject.toml  package metadata
-```
-
-## Development
+## Local confidence
 
 ```bash
-python -m pip install -e ".[dev]"
 ruff check .
 pytest
 python -m llm_replay_proxy --help

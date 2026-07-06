@@ -1,6 +1,6 @@
-<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LLM Replay Proxy icon">
-  <rect width="256" height="256" rx="58" fill="#1f130f"/>
-  <path d="M54 178V78h148v100" stroke="#b45309" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M84 114h88M84 150h58" stroke="#fff7ed" stroke-width="14" stroke-linecap="round"/>
-  <path d="M55 186h146" stroke="#f97316" stroke-width="14" stroke-linecap="round"/>
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LLM Replay Proxy icon">
+  <rect width="240" height="240" rx="48" fill="#24111f"/>
+  <path d="M58 74h124v92H58z" fill="none" stroke="#be185d" stroke-width="14" stroke-linejoin="round"/>
+  <path d="M82 110h72M82 140h44" stroke="#fff1f2" stroke-width="12" stroke-linecap="round"/>
+  <path d="M58 182h124" stroke="#f59e0b" stroke-width="12" stroke-linecap="round"/>
 </svg>
